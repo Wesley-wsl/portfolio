@@ -41,17 +41,17 @@ export const Card = styled.div`
             text-shadow: 1px 1px 10px #fff;
         }
     }
+`;
 
-    .demo {
-        display: flex;
-        justify-content: space-around;
-        margin: 10px 0;
+export const Demo = styled.div`
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
 
-        a {
-            background-color: #000;
-            padding: 7px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
+    a {
+        background-color: #000;
+        padding: 7px;
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
 `;
