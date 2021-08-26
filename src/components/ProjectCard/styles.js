@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-    /* margin-top: 80px; */
     max-width: 360px;
-    background-color: #000900;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px 0px #1488cc;
     img {
         max-width: 360px;
     }
@@ -17,8 +16,9 @@ export const Card = styled.div`
     }
 
     .division {
-        margin: 7px auto;
+        margin: 15px auto;
         height: 3px;
+        background: #00416a;
     }
 
     p {
@@ -28,7 +28,6 @@ export const Card = styled.div`
     }
 
     .labelStack {
-        color: var(--green-bold);
         text-align: center;
         margin: 10px auto;
     }
@@ -36,10 +35,10 @@ export const Card = styled.div`
     .stacks {
         display: flex;
         p {
-            max-width: 90px;
+            max-width: 350px;
             border-radius: 6px;
             text-align: center;
-            text-shadow: 0px 0px 10px #00ff00;
+            text-shadow: 1px 1px 10px #fff;
         }
     }
 
@@ -49,7 +48,7 @@ export const Card = styled.div`
         margin: 10px 0;
 
         a {
-            background-color: #001700;
+            background-color: #000;
             padding: 7px;
             border-radius: 10px;
             margin-bottom: 10px;
