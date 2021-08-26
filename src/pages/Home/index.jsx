@@ -1,7 +1,7 @@
 import Header from '../../components/Header';
 import ProjectCard from '../../components/ProjectCard';
 import { DiReact, DiDatabase, DiZend } from 'react-icons/di';
-import { Main } from './styles';
+import { Main, Introduction, Projects, Techs, About, Division } from './styles';
 import { projects } from '../../projects/projects';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <Header />
             <Main>
-                <section className="introduction">
+                <Introduction>
                     <h2>
                         Welcome To <br /> My Personal Portfolio
                     </h2>
@@ -19,10 +19,10 @@ export default function Home() {
                         skills to ther next level and build awesome apps.
                     </p>
                     <button>Learn More</button>
-                    <div className="division" />
-                </section>
+                    <Division />
+                </Introduction>
                 <h2>Projects</h2>
-                <section className="projects">
+                <Projects>
                     {projects.map((project, index) => {
                         return (
                             <ProjectCard
@@ -36,9 +36,9 @@ export default function Home() {
                             />
                         );
                     })}
-                </section>
-                <div className="division"></div>
-                <section className="techs">
+                </Projects>
+                <Division />
+                <Techs>
                     <h2>Technologies</h2>
                     <p>
                         I&#39;ve worked with a range a technologies in the web
@@ -62,9 +62,9 @@ export default function Home() {
                             <p>Basic knowledge with Figma</p>
                         </div>
                     </div>
-                </section>
-                <div className="division"></div>
-                <section className="About">
+                </Techs>
+                <Division />
+                <About>
                     <h2>About Me</h2>
                     <p>
                         The purpose of JavaScript Mastery is to help aspiring
@@ -78,7 +78,7 @@ export default function Home() {
                         </div>
                     </div>
                     <p>Email: wesleywestelley@gmail.com</p>
-                </section>
+                </About>
             </Main>
         </>
     );

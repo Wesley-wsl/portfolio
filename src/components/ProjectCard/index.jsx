@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Card } from './styles';
+import { Card, Demo } from './styles';
 
 export default function ProjectCard(props) {
     return (
@@ -16,14 +16,14 @@ export default function ProjectCard(props) {
                     <p>{props.stacks}</p>
                 </div>
 
-                <div className="demo">
+                <Demo>
                     <a href={props.code} target="_blank" rel="noreferrer">
                         Code
                     </a>
                     <a href={props.live} target="_blank" rel="noreferrer">
                         Live
                     </a>
-                </div>
+                </Demo>
             </Card>
         </>
     );
