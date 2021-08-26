@@ -1,31 +1,28 @@
-import weatherApp from '../../assets/weatherapp.png';
+/* eslint-disable react/prop-types */
 import { Card } from './styles';
 
-export default function ProjectCard() {
+export default function ProjectCard(props) {
     return (
         <>
             <Card>
-                <img src={weatherApp} alt="Project image" />
+                <img src={props.img} alt="Project image" />
 
-                <h3>WeatherApp</h3>
+                <h3>{props.name}</h3>
                 <div className="division" />
 
-                <p>
-                    WeatherApp Web is a simple weather app that uses an
-                    OpenWeatherMap API to fetch the temperature of places in the
-                    world and their weather data such as: humidity, wind,
-                    pressure and temperature.
-                </p>
+                <p>{props.description}</p>
                 <p className="labelStack">Stacks</p>
                 <div className="stacks">
-                    <p>React.JS</p>
-                    <p>SCSS</p>
-                    <p>Axios</p>
+                    <p>{props.stacks}</p>
                 </div>
 
                 <div className="demo">
-                    <a href="">Code</a>
-                    <a href="">Live</a>
+                    <a href={props.code} target="_blank" rel="noreferrer">
+                        Code
+                    </a>
+                    <a href={props.live} target="_blank" rel="noreferrer">
+                        Live
+                    </a>
                 </div>
             </Card>
         </>
