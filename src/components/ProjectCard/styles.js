@@ -18,13 +18,15 @@ export const Card = styled.div`
     .division {
         margin: 15px auto;
         height: 3px;
-        background: #00416a;
+        width: 60px;
+        background: #005aa7;
     }
 
     p {
         max-width: 300px;
         text-align: justify;
         margin: 5px auto;
+        text-shadow: 0px 0px 3px #005aa7;
     }
 
     .labelStack {
@@ -38,7 +40,6 @@ export const Card = styled.div`
             max-width: 350px;
             border-radius: 6px;
             text-align: center;
-            text-shadow: 1px 1px 10px #fff;
         }
     }
 `;

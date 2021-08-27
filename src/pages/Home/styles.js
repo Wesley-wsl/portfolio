@@ -24,6 +24,7 @@ export const Introduction = styled.section`
         border-radius: 15px;
         color: #fff;
         border: none;
+        cursor: pointer;
     }
 `;
 
