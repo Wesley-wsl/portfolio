@@ -7,7 +7,7 @@ export const HeaderStyle = styled.header`
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-
+    animation: HeaderAnimation 1s linear;
     h1 {
         cursor: pointer;
         font-size: 18px;
@@ -34,6 +34,17 @@ export const HeaderStyle = styled.header`
         p {
             font-size: 20px;
             cursor: pointer;
+        }
+    }
+
+    @keyframes HeaderAnimation {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
         }
     }
 `;
