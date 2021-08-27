@@ -58,7 +58,7 @@ export default function Home() {
                 </Projects>
                 <Division />
                 <Techs
-                    data-aos="fade-up"
+                    data-aos="fade-right"
                     data-aos-anchor-placement="center-bottom"
                     id="Technologies"
                 >
@@ -87,7 +87,7 @@ export default function Home() {
                     </div>
                 </Techs>
                 <Division />
-                <About data-aos="fade-up" id="About">
+                <About data-aos="fade-left" id="About">
                     <h2>About Me</h2>
                     <p>
                         The purpose of JavaScript Mastery is to help aspiring
