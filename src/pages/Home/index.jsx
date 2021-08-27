@@ -3,13 +3,21 @@ import ProjectCard from '../../components/ProjectCard';
 import { DiReact, DiDatabase, DiZend } from 'react-icons/di';
 import { Main, Introduction, Projects, Techs, About, Division } from './styles';
 import { projects } from '../../projects/projects';
+import { Link } from 'react-scroll';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
+
     return (
         <>
             <Header />
             <Main>
-                <Introduction>
+                <Introduction data-aos="fade-right">
                     <h2>
                         Welcome To <br /> My Personal Portfolio
                     </h2>
@@ -18,11 +26,22 @@ export default function Home() {
                         and established developers to take their development
                         skills to ther next level and build awesome apps.
                     </p>
-                    <button>Learn More</button>
+                    <Link
+                        activeClass="active"
+                        to="Projects"
+                        spy={true}
+                        smooth={true}
+                        duration={1300}
+                    >
+                        <button>Learn More</button>
+                    </Link>
+
                     <Division />
                 </Introduction>
-                <h2>Projects</h2>
-                <Projects>
+                <h2 id="Projects" data-aos="fade-up">
+                    Projects
+                </h2>
+                <Projects data-aos="flip-up">
                     {projects.map((project, index) => {
                         return (
                             <ProjectCard
@@ -38,7 +57,11 @@ export default function Home() {
                     })}
                 </Projects>
                 <Division />
-                <Techs>
+                <Techs
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    id="Technologies"
+                >
                     <h2>Technologies</h2>
                     <p>
                         I&#39;ve worked with a range a technologies in the web
@@ -64,7 +87,7 @@ export default function Home() {
                     </div>
                 </Techs>
                 <Division />
-                <About>
+                <About data-aos="fade-up" id="About">
                     <h2>About Me</h2>
                     <p>
                         The purpose of JavaScript Mastery is to help aspiring
