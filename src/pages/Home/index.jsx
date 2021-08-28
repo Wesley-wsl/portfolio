@@ -22,9 +22,10 @@ export default function Home() {
                         Welcome To <br /> My Personal Portfolio
                     </h2>
                     <p>
-                        The purpose of JavaScript Mastery is tto help aspiring
-                        and established developers to take their development
-                        skills to ther next level and build awesome apps.
+                        Hi, I&#39;m Wesley Westelley, a front end developer
+                        focused on the best technologies in the market, I&#39;m
+                        focused on acquiring knowledge to become a great full
+                        stack developer.
                     </p>
                     <Link
                         activeClass="active"
@@ -64,15 +65,15 @@ export default function Home() {
                 >
                     <h2>Technologies</h2>
                     <p>
-                        I&#39;ve worked with a range a technologies in the web
-                        development world
+                        I&#39;ve work with a range of technologies in the web
+                        development world.
                     </p>
 
                     <div>
                         <div>
                             <DiReact />
                             <h3>Front-End</h3>
-                            <p>Knowledge with React.js</p>
+                            <p>Experience with React.js</p>
                         </div>
                         <div>
                             <DiDatabase />
@@ -90,9 +91,10 @@ export default function Home() {
                 <About data-aos="fade-left" id="About">
                     <h2>About Me</h2>
                     <p>
-                        The purpose of JavaScript Mastery is to help aspiring
-                        and established developers to take their development to
-                        the next level and build awesome apps.
+                        I&#39;m Wesley Westelley, a front end developer focused
+                        on the best technologies in the market, I&#39;m focused
+                        on acquiring knowledge to become a great full stack
+                        developer.
                     </p>
                     <div>
                         <div>
@@ -100,6 +102,7 @@ export default function Home() {
                             <p>Started my journey</p>
                         </div>
                     </div>
+                    <Division />
                     <p>Email: wesleywestelley@gmail.com</p>
                 </About>
             </Main>
