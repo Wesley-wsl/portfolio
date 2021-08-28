@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Main = styled.main`
     max-width: 760px;
     margin: 60px auto;
+    @media (max-width: 850px) {
+        margin-left: 20px;
+    }
 `;
 
 export const Introduction = styled.section`
@@ -47,7 +50,18 @@ export const Projects = styled.section`
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    gap: 80px;
+    justify-content: center;
+
+    @media (max-width: 1050px) {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    @media (max-width: 760px) {
+        margin-left: 0px;
+        gap: 50px;
+    }
 `;
 
 export const Techs = styled.section`
@@ -57,6 +71,7 @@ export const Techs = styled.section`
 
     div {
         display: flex;
+        flex-wrap: wrap;
         margin-right: 80px;
         margin-top: 30px;
 
@@ -73,7 +88,7 @@ export const Techs = styled.section`
             }
 
             p {
-                max-width: 150px;
+                max-width: 200px;
                 margin-top: 7px;
             }
         }

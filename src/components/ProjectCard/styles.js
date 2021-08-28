@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-    max-width: 360px;
+    max-width: 350px;
+    margin: 0 auto;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 0px #1488cc;
     img {
-        max-width: 360px;
+        max-width: 350px;
     }
 
     h3 {
@@ -38,7 +39,6 @@ export const Card = styled.div`
         display: flex;
         p {
             max-width: 350px;
-            border-radius: 6px;
             text-align: center;
         }
     }

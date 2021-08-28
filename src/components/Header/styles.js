@@ -47,4 +47,8 @@ export const HeaderStyle = styled.header`
             transform: translateY(0px);
         }
     }
+
+    @media (max-width: 650px) {
+        display: none;
+    }
 `;
