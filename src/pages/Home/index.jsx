@@ -7,6 +7,7 @@ import { Link } from 'react-scroll';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { HeaderMobile } from '../../components/HeaderMobile';
 
 export default function Home() {
     useEffect(() => {
@@ -16,6 +17,7 @@ export default function Home() {
     return (
         <>
             <Header />
+            <HeaderMobile />
             <Main>
                 <Introduction data-aos="fade-right">
                     <h2>
@@ -88,7 +90,7 @@ export default function Home() {
                     </div>
                 </Techs>
                 <Division />
-                <About data-aos="fade-left" id="About">
+                <About data-aos="fade-up" id="About">
                     <h2>About Me</h2>
                     <p>
                         I&#39;m Wesley Westelley, a front end developer focused
