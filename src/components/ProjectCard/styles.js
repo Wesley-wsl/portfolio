@@ -50,7 +50,7 @@ export const Demo = styled.div`
     margin: 10px 0;
 
     a {
-        background-color: #000;
+        background-color: #005;
         padding: 7px;
         border-radius: 10px;
         margin-bottom: 10px;
