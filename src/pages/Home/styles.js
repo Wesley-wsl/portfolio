@@ -25,6 +25,10 @@ export const Introduction = styled.section`
         color: #fff;
         border: none;
         cursor: pointer;
+        transition: transform 0.3s linear;
+        &:hover {
+            transform: scale(120%);
+        }
     }
 `;
 
@@ -32,6 +36,13 @@ export const Projects = styled.section`
     div:nth-child(1),
     div:nth-child(2) {
         margin-top: 55px;
+    }
+
+    div {
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: scale(105%);
+        }
     }
 
     display: grid;
@@ -87,9 +98,7 @@ export const About = styled.section`
                 right: 20px;
                 height: 2px;
                 width: 40px;
-                background: #005aa7;
-                background: -webkit-linear-gradient(to right, #005aa7, #fffde4);
-                background: linear-gradient(to right, #005aa7, #fffde4);
+                background: #1f5fc0;
             }
 
             h3 {
