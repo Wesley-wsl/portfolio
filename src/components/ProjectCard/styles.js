@@ -6,7 +6,8 @@ export const Card = styled.div`
     border-radius: 10px;
     box-shadow: 1px 1px 10px 0px #1488cc;
     img {
-        max-width: 350px;
+        width: 350px;
+        height: 200px;
     }
 
     h3 {
