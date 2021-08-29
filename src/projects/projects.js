@@ -1,6 +1,7 @@
 import countries from '../assets/countries-app.jpg';
 import weatherApp from '../assets/weatherapp.png';
 import cinetrending from '../assets/cinetrending.png';
+import letmeask from '../assets/letmeask.png';
 
 export const projects = [
     {
@@ -29,5 +30,14 @@ export const projects = [
         img: countries,
         live: 'https://countries-app-wsl.netlify.app',
         source: 'https://github.com/Wesley-wsl/countries-app',
+    },
+    {
+        name: 'Letmeask',
+        description:
+            "Letmeask is a project developed together with rocketseat's nlw-togueter event. Letmeask is perfect for content/live creators to create rooms and answer live people's queries in real time",
+        stacks: 'React.JS, SCSS, Firebase, Typescript.',
+        img: letmeask,
+        live: 'https://letmeask-wsl.netlify.app',
+        source: 'https://github.com/Wesley-wsl/letMeAsk.git',
     },
 ];
