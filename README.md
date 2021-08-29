@@ -8,7 +8,7 @@
 
 ## Application deploy with netlify: :dash:
 
->
+> https://portfolio-wsl.netlify.app
 
 ## 📜 About the Project
 
