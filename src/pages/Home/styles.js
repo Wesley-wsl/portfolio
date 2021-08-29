@@ -9,6 +9,7 @@ export const Main = styled.main`
 `;
 
 export const Introduction = styled.section`
+    margin-bottom: 70px;
     p {
         max-width: 430px;
         font-size: 19px;
