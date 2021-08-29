@@ -28,4 +28,9 @@ h2 {
         font-size: 42px;
         margin-bottom: 20px;
     }
+
+::-webkit-scrollbar              { background-color: #000011;}
+::-webkit-scrollbar-button       { background-color: #00004f; border-radius: 5px;}
+::-webkit-scrollbar-track        { background-color: #00002f; }
+::-webkit-scrollbar-thumb        { background-color: #00008f; border-radius: 10px;}
 `;
