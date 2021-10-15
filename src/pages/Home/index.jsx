@@ -24,7 +24,7 @@ export default function Home() {
                         Welcome To <br /> My Personal Portfolio
                     </h2>
                     <p>
-                        Hi, I&#39;m Wesley Westelley, a full-stack end developer
+                        Hi, I&#39;m Wesley Westelley, a full-stack developer
                         focused on the best technologies in the market, I&#39;m
                         focused on acquiring knowledge to become a great full
                         stack developer.
