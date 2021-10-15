@@ -2,12 +2,14 @@ import countries from '../assets/countries-app.jpg';
 import weatherApp from '../assets/weatherapp.png';
 import cinetrending from '../assets/cinetrending.png';
 import letmeask from '../assets/letmeask.png';
+import daynotes from '../assets/daynotes.png';
+import invoiceApp from '../assets/invoiceApp.png';
 
 export const projects = [
     {
         name: 'WeatherApp',
         description:
-            'WeatherApp Web is a simple weather app that uses an OpenWeatherMap API to fetch the temperature of places in the world and their weather data such as: humidity, wind, pressure and temperature.',
+            'WeatherApp Web is a weather app that fetch the temperature of places in the world and their weather datas.',
         stacks: 'React.JS, Axios, Styled-components.',
         img: weatherApp,
         live: 'https://weatherappwsl.netlify.app',
@@ -34,10 +36,27 @@ export const projects = [
     {
         name: 'Letmeask',
         description:
-            "Letmeask is a project developed together with rocketseat's nlw-togueter event. Letmeask is perfect for content/live creators to create rooms and answer live people's queries in real time",
+            "Letmeask is perfect for content/live creators to create rooms and answer live people's queries in real time",
         stacks: 'React.JS, SCSS, Firebase, Typescript.',
         img: letmeask,
         live: 'https://letmeask-wsl.netlify.app',
         source: 'https://github.com/Wesley-wsl/letMeAsk.git',
+    },
+    {
+        name: 'Day-notes',
+        description:
+            'Day-notes is a notes book project full-stack to control notes in database.',
+        stacks: 'React.JS, Node.JS, MongoDB',
+        img: daynotes,
+        live: 'https://day-notes.netlify.app',
+        source: 'https://github.com/Wesley-wsl/day-notes',
+    },
+    {
+        name: 'invoice-app',
+        description: 'invoice-app is a project to organize your invoices.',
+        stacks: 'Next.JS, Styled-components, MongoDB, TypeScript',
+        img: invoiceApp,
+        live: 'https://invoice-app-weld.vercel.app',
+        source: 'https://github.com/Wesley-wsl/invoice-app',
     },
 ];
