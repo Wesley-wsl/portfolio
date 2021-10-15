@@ -24,7 +24,7 @@ export default function Home() {
                         Welcome To <br /> My Personal Portfolio
                     </h2>
                     <p>
-                        Hi, I&#39;m Wesley Westelley, a front end developer
+                        Hi, I&#39;m Wesley Westelley, a full-stack end developer
                         focused on the best technologies in the market, I&#39;m
                         focused on acquiring knowledge to become a great full
                         stack developer.
@@ -44,7 +44,7 @@ export default function Home() {
                 <h2 id="Projects" data-aos="fade-up">
                     Projects
                 </h2>
-                <Projects data-aos="flip-up">
+                <Projects data-aos="flip-down">
                     {projects.map((project, index) => {
                         return (
                             <ProjectCard
@@ -93,7 +93,7 @@ export default function Home() {
                 <About data-aos="fade-up" id="About">
                     <h2>About Me</h2>
                     <p>
-                        I&#39;m Wesley Westelley, a front end developer focused
+                        I&#39;m Wesley Westelley, a full-stack developer focused
                         on the best technologies in the market, I&#39;m focused
                         on acquiring knowledge to become a great full stack
                         developer.
