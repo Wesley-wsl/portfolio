@@ -13,6 +13,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.3",
     "styled-components": "^5.3.0",
+    "typescript": "^4.5.5",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -40,8 +41,18 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-scroll": "^1.8.3",
+    "@types/styled-components": "^5.1.21",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import-helpers": "^1.2.1",
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.24.0",
     "prettier": "^2.3.2"
