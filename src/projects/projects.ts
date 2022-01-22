@@ -1,9 +1,9 @@
-import countries from '../assets/countries-app.jpg';
-import weatherApp from '../assets/weatherapp.png';
 import cinetrending from '../assets/cinetrending.png';
-import letmeask from '../assets/letmeask.png';
+import countries from '../assets/countries-app.jpg';
 import daynotes from '../assets/daynotes.png';
 import invoiceApp from '../assets/invoiceApp.png';
+import letmeask from '../assets/letmeask.png';
+import weatherApp from '../assets/weatherapp.png';
 
 export const projects = [
     {

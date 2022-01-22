@@ -28,8 +28,8 @@ export const Menu = styled.div`
     }
 `;
 
+/* display: ${({ active }: boolean) => (active ? 'block' : 'none')}; */
 export const NavBarMobile = styled.nav`
-    display: ${props => (props.active ? 'block' : 'none')};
     background-color: #000039;
     border-radius: 10px;
     position: absolute;

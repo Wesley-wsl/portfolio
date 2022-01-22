@@ -1,13 +1,15 @@
-import Header from '../../components/Header';
-import ProjectCard from '../../components/ProjectCard';
-import { DiReact, DiDatabase, DiZend } from 'react-icons/di';
-import { Main, Introduction, Projects, Techs, About, Division } from './styles';
-import { projects } from '../../projects/projects';
-import { Link } from 'react-scroll';
-import { useEffect } from 'react';
 import Aos from 'aos';
-import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import { DiReact, DiDatabase, DiZend } from 'react-icons/di';
+import { Link } from 'react-scroll';
+
+import Header from '../../components/Header';
 import { HeaderMobile } from '../../components/HeaderMobile';
+import ProjectCard from '../../components/ProjectCard';
+import { projects } from '../../projects/projects';
+import { Main, Introduction, Projects, Techs, About, Division } from './styles';
+
+import 'aos/dist/aos.css';
 
 export default function Home() {
     useEffect(() => {
@@ -53,7 +55,7 @@ export default function Home() {
                                 img={project.img}
                                 stacks={project.stacks}
                                 live={project.live}
-                                code={project.source}
+                                source={project.source}
                                 key={index}
                             />
                         );

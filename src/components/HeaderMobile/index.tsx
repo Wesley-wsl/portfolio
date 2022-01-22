@@ -1,7 +1,8 @@
-import { Menu, HeaderStyle, NavBarMobile } from './styles';
-import { Link } from 'react-scroll';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { useState } from 'react';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { Link } from 'react-scroll';
+
+import { Menu, HeaderStyle, NavBarMobile } from './styles';
 
 export function HeaderMobile() {
     const [Active, setActive] = useState(false);
@@ -15,7 +16,7 @@ export function HeaderMobile() {
                     <div />
                     <div />
                 </Menu>
-                <NavBarMobile active={Active}>
+                <NavBarMobile>
                     <ul>
                         <li>
                             <Link

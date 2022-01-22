@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { HeaderStyle } from './styles';
 import { Link } from 'react-scroll';
+
+import { HeaderStyle } from './styles';
 
 export default function Header() {
     return (
@@ -15,6 +16,7 @@ export default function Header() {
                             spy={true}
                             smooth={true}
                             duration={1300}
+                            alt="Go to projects"
                         >
                             Projects
                         </Link>
@@ -26,6 +28,7 @@ export default function Header() {
                             spy={true}
                             smooth={true}
                             duration={2000}
+                            alt="Go to see technologies"
                         >
                             Technologies
                         </Link>
@@ -37,6 +40,7 @@ export default function Header() {
                             spy={true}
                             smooth={true}
                             duration={2000}
+                            alt="Go to about"
                         >
                             About
                         </Link>
@@ -50,13 +54,14 @@ export default function Header() {
                         href="https://github.com/Wesley-wsl"
                         target="_blank"
                         rel="noreferrer"
+                        aria-label="Go to my github"
                     >
-                        <AiFillGithub />
+                        <AiFillGithub aria-label="github icon" />
                     </a>
                 </p>
                 <p>
-                    <a href="#">
-                        <AiFillLinkedin />
+                    <a href="#" aria-label="Go to my linkedin profile">
+                        <AiFillLinkedin aria-label="Linkedin icon" />
                     </a>
                 </p>
             </div>
