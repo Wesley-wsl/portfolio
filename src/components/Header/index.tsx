@@ -1,13 +1,25 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { Link } from 'react-scroll';
 
-import { HeaderStyle } from './styles';
+import { HeaderMobile } from '../HeaderMobile';
+import * as S from './styles';
 
 export default function Header() {
     return (
-        <HeaderStyle>
-            <h1>&lt;Portfolio /&gt;</h1>
-            <nav>
+        <S.HeaderStyle>
+            <h1>
+                <Link
+                    activeClass="active"
+                    to="Home"
+                    spy={true}
+                    smooth={true}
+                    duration={1300}
+                    alt="Go to projects"
+                >
+                    &lt;Portfolio /&gt;
+                </Link>
+            </h1>
+            <S.NavBar>
                 <ul>
                     <li>
                         <Link
@@ -46,9 +58,8 @@ export default function Header() {
                         </Link>
                     </li>
                 </ul>
-            </nav>
-            <div className="socialMedias">
-                {' '}
+            </S.NavBar>
+            <S.SocialMedia>
                 <p>
                     <a
                         href="https://github.com/Wesley-wsl"
@@ -64,7 +75,9 @@ export default function Header() {
                         <AiFillLinkedin aria-label="Linkedin icon" />
                     </a>
                 </p>
-            </div>
-        </HeaderStyle>
+            </S.SocialMedia>
+
+            <HeaderMobile />
+        </S.HeaderStyle>
     );
 }
