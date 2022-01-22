@@ -10,13 +10,12 @@ export function HeaderMobile() {
     return (
         <>
             <HeaderStyle>
-                <h1>&lt;Portfolio /&gt;</h1>
                 <Menu onClick={() => setActive(!Active)}>
                     <div />
                     <div />
                     <div />
                 </Menu>
-                <NavBarMobile>
+                <NavBarMobile active={Active}>
                     <ul>
                         <li>
                             <Link
@@ -25,6 +24,7 @@ export function HeaderMobile() {
                                 spy={true}
                                 smooth={true}
                                 duration={1300}
+                                onClick={() => setActive(false)}
                             >
                                 Projects
                             </Link>
@@ -36,6 +36,7 @@ export function HeaderMobile() {
                                 spy={true}
                                 smooth={true}
                                 duration={2000}
+                                onClick={() => setActive(false)}
                             >
                                 Technologies
                             </Link>
@@ -47,6 +48,7 @@ export function HeaderMobile() {
                                 spy={true}
                                 smooth={true}
                                 duration={2000}
+                                onClick={() => setActive(false)}
                             >
                                 About
                             </Link>
@@ -58,12 +60,13 @@ export function HeaderMobile() {
                                     href="https://github.com/Wesley-wsl"
                                     target="_blank"
                                     rel="noreferrer"
+                                    onClick={() => setActive(false)}
                                 >
                                     <AiFillGithub />
                                 </a>
                             </p>
                             <p>
-                                <a href="#">
+                                <a href="#" onClick={() => setActive(false)}>
                                     <AiFillLinkedin />
                                 </a>
                             </p>

@@ -1,15 +1,10 @@
 import styled from 'styled-components';
 
-export const HeaderStyle = styled.header`
+import { INavMobile } from '../../@types';
+
+export const HeaderStyle = styled.div`
     display: flex;
     justify-content: space-between;
-    max-width: 450px;
-    margin: 0 auto;
-    h1 {
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: bold;
-    }
     padding: 15px;
 
     @media (min-width: 651px) {
@@ -20,6 +15,13 @@ export const HeaderStyle = styled.header`
 export const Menu = styled.div`
     cursor: pointer;
     position: relative;
+    opacity: 0.6;
+    transition: all 0.2s linear;
+    z-index: 999;
+    &:hover {
+        opacity: 1;
+    }
+
     div {
         height: 2px;
         background-color: #fff;
@@ -28,21 +30,29 @@ export const Menu = styled.div`
     }
 `;
 
-/* display: ${({ active }: boolean) => (active ? 'block' : 'none')}; */
 export const NavBarMobile = styled.nav`
-    background-color: #000039;
-    border-radius: 10px;
-    position: absolute;
-    top: 40px;
-    right: 10px;
-    z-index: 1;
+    display: ${({ active }: INavMobile) => (active ? 'block' : 'none')};
+    background-color: var(--background);
     animation: appear 0.2s linear;
+    transition: all 0.2 linear;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    li:nth-child(1) {
+        margin-top: 50px;
+    }
+
     li {
         list-style: none;
         padding: 15px;
-
+        align-items: center;
+        justify-content: center;
         display: flex;
         gap: 10px;
+        user-select: none;
         svg {
             font-size: 20px;
         }
