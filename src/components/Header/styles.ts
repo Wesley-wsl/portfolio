@@ -31,6 +31,7 @@ export const HeaderStyle = styled.header`
             opacity: 1;
             transform: translateY(-4px);
         }
+        font-weight: 400;
     }
 
     @keyframes HeaderAnimation {
@@ -80,6 +81,7 @@ export const NavBar = styled.nav`
             font-size: var(--fz-md);
             opacity: 0.6;
             transition: all 0.2s linear;
+            font-weight: 300;
 
             &:hover {
                 opacity: 1;
