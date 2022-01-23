@@ -2,7 +2,7 @@
 
 ## Demo 📸
 
-<p align='center'> <img src='./src/assets/portfolio.gif'/></p>
+<p align='center'> <img src='.github/portfolio.gif'/></p>
 
 <hr/>
 
@@ -20,6 +20,8 @@ This is my personal portfolio to show my projects.
 <li><a href="https://styled-components.com">Styled-components</a></li>
 <li><a href="https://michalsnik.github.io/aos/">AOS</a></li>
 <li><a href="https://www.npmjs.com/package/react-scroll">React-scroll</a></li>
+<li><a href="https://www.typescriptlang.org">TypeScript</a></li>
+<li><a href="https://editorconfig.org">EditorConfig</a></li>
 <li><a href="https://eslint.org">Eslint</a></li>
 <li><a href="https://prettier.io">Prettier</a></li>
 
@@ -39,13 +41,13 @@ $ git clone https://github.com/Wesley-wsl/portfolio.git
 $ cd portfolio
 
 # Install dependencies:
-$ yarn install
-ou
+$ yarn
+or
 $ npm install
 
 # Run the application:
 $ yarn start
-ou
+or
 $ npm run start
 </pre>
 
