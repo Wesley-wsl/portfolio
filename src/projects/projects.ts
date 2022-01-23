@@ -1,62 +1,83 @@
 import cinetrending from '../assets/cinetrending.png';
-import countries from '../assets/countries-app.jpg';
+import countries from '../assets/countries-app.png';
 import daynotes from '../assets/daynotes.png';
 import invoiceApp from '../assets/invoiceApp.png';
 import letmeask from '../assets/letmeask.png';
+import nikeShoes from '../assets/nike-shoes.png';
+import photosnap from '../assets/photosnap.png';
+import spaceTourism from '../assets/space-tourism.png';
 import weatherApp from '../assets/weatherapp.png';
 
 export const projects = [
     {
-        name: 'WeatherApp',
+        name: 'NikeShoes',
         description:
-            'WeatherApp Web is a weather app that fetch the temperature of places in the world and their weather datas.',
-        stacks: 'React.JS, Axios, Styled-components.',
-        img: weatherApp,
-        live: 'https://weatherappwsl.netlify.app',
-        source: 'https://github.com/Wesley-wsl/WeatherApp',
+            'This is a full stack application that simulates a fictitious ecommerce application that aims to sell / buy Nike shoes.',
+        img: nikeShoes,
+        live: 'https://nike-shoes-frontend.vercel.app',
+        source: 'https://github.com/Wesley-wsl/NikeShoes-FullStack',
     },
     {
         name: 'CineTrending',
         description:
-            'CineTrending is a project that show the top 10 trending movies/series for day and your information.',
-        stacks: 'React.JS, Axios, Styled-components',
+            'CineTrending is application about movies/tv series that show movie/tv series trending and your informations.',
         img: cinetrending,
         live: 'https://cinetrending.netlify.app',
         source: 'https://github.com/Wesley-wsl/CineTrending',
     },
     {
+        name: 'Photosnap',
+        description:
+            'Photosnap is a fictional website multi-page for a platform for photographers and visual storytellers that aims to share photographs, tell stories and connect with others in their profession.',
+        img: photosnap,
+        live: 'https://photosnap-wsl.netlify.app',
+        source: 'https://github.com/Wesley-wsl/photosnap',
+    },
+    {
+        name: 'WeatherApp',
+        description:
+            'WeatherApp Web is a weather app that fetch the temperature of places in the world and their weather datas.',
+        img: weatherApp,
+        live: 'https://weatherappwsl.netlify.app',
+        source: 'https://github.com/Wesley-wsl/WeatherApp',
+    },
+    {
         name: 'CountriesApp',
         description:
             'countries-app is a project that show all countries and your main informations.',
-        stacks: 'React.JS, Axios, Styled-components',
         img: countries,
         live: 'https://countries-app-wsl.netlify.app',
         source: 'https://github.com/Wesley-wsl/countries-app',
     },
     {
+        name: 'invoice-app',
+        description: 'invoice-app is a project to organize your invoices.',
+        img: invoiceApp,
+        live: 'https://invoice-app-weld.vercel.app',
+        source: 'https://github.com/Wesley-wsl/invoice-app',
+    },
+    {
         name: 'Letmeask',
         description:
             "Letmeask is perfect for content/live creators to create rooms and answer live people's queries in real time",
-        stacks: 'React.JS, SCSS, Firebase, Typescript.',
         img: letmeask,
         live: 'https://letmeask-wsl.netlify.app',
         source: 'https://github.com/Wesley-wsl/letMeAsk.git',
     },
     {
+        name: 'Space Tourism',
+        description:
+            ' Space-tourism is a fictional website multi-page for a platform for space tourism that aims to share informations about this enterprise.',
+        img: spaceTourism,
+        live: 'https://space-tourism-wsl.netlify.app',
+        source: 'https://github.com/Wesley-wsl/space-tourism',
+    },
+    {
         name: 'Day-notes',
         description:
             'Day-notes is a notes book project full-stack to control notes in database.',
-        stacks: 'React.JS, Node.JS, MongoDB',
         img: daynotes,
         live: 'https://day-notes.netlify.app',
         source: 'https://github.com/Wesley-wsl/day-notes',
-    },
-    {
-        name: 'invoice-app',
-        description: 'invoice-app is a project to organize your invoices.',
-        stacks: 'Next.JS, Styled-components, MongoDB, TypeScript',
-        img: invoiceApp,
-        live: 'https://invoice-app-weld.vercel.app',
-        source: 'https://github.com/Wesley-wsl/invoice-app',
     },
 ];
