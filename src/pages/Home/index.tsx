@@ -4,10 +4,10 @@ import { DiReact, DiDatabase, DiZend } from 'react-icons/di';
 import { Link } from 'react-scroll';
 
 import Header from '../../components/Header';
-import { HeaderMobile } from '../../components/HeaderMobile';
 import ProjectCard from '../../components/ProjectCard';
 import { projects } from '../../projects/projects';
-import { Main, Introduction, Projects, Techs, About, Division } from './styles';
+import * as SG from '../../styles/global';
+import * as S from './styles';
 
 import 'aos/dist/aos.css';
 
@@ -19,17 +19,16 @@ export default function Home() {
     return (
         <>
             <Header />
-            <HeaderMobile />
-            <Main>
-                <Introduction data-aos="fade-right">
-                    <h2>
+            <S.Main id="Home">
+                <S.Introduction data-aos="fade-right">
+                    <SG.Title>
                         Welcome To <br /> My Personal Portfolio
-                    </h2>
+                    </SG.Title>
                     <p>
-                        Hi, I&#39;m Wesley Westelley, a full-stack developer
-                        focused on the best technologies in the market, I&#39;m
-                        focused on acquiring knowledge to become a great full
-                        stack developer.
+                        I&#39;m Wesley Westelley, a full-stack developer focused
+                        on the best technologies around JavaScript/TypeScript, I
+                        develop complete web applications, from the backend to
+                        the frontend.
                     </p>
                     <Link
                         activeClass="active"
@@ -41,29 +40,28 @@ export default function Home() {
                         <button>Learn More</button>
                     </Link>
 
-                    <Division />
-                </Introduction>
-                <h2 id="Projects" data-aos="fade-up">
-                    Projects
-                </h2>
-                <Projects data-aos="flip-down">
+                    <S.Division />
+                </S.Introduction>
+                <S.Projects data-aos="fade-up">
+                    <SG.Title id="Projects" data-aos="fade-up">
+                        Projects
+                    </SG.Title>
                     {projects.map((project, index) => {
                         return (
                             <ProjectCard
                                 name={project.name}
                                 description={project.description}
                                 img={project.img}
-                                stacks={project.stacks}
                                 live={project.live}
                                 source={project.source}
                                 key={index}
                             />
                         );
                     })}
-                </Projects>
-                <Division />
-                <Techs
-                    data-aos="fade-right"
+                </S.Projects>
+                <S.Division />
+                <S.Techs
+                    data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
                     id="Technologies"
                 >
@@ -74,31 +72,56 @@ export default function Home() {
                     </p>
 
                     <div>
-                        <div>
+                        <S.ShowTechs>
                             <DiReact />
                             <h3>Front-End</h3>
-                            <p>Experience with React.js</p>
-                        </div>
-                        <div>
+                            <ul>
+                                <li>Css</li>
+                                <li>Html</li>
+                                <li>Scss</li>
+                                <li>Axios</li>
+                                <li>Next.JS</li>
+                                <li>React.JS</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>Apollo Client</li>
+                                <li>Styled-Components</li>
+                            </ul>
+                        </S.ShowTechs>
+                        <S.ShowTechs>
                             <DiDatabase />
                             <h3>Back-End</h3>
-                            <p>Experience with Node.js</p>
-                        </div>
-                        <div>
+                            <ul>
+                                <li>Jwt</li>
+                                <li>Bcrypt</li>
+                                <li>Node.JS</li>
+                                <li>MongoDB</li>
+                                <li>Express.JS</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>Apollo Server</li>
+                            </ul>
+                        </S.ShowTechs>
+                        <S.ShowTechs>
                             <DiZend />
-                            <h3>UI/UX</h3>
-                            <p>Basic knowledge with Figma</p>
-                        </div>
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>Jest</li>
+                                <li>Eslint</li>
+                                <li>Prettier</li>
+                                <li>EditorConfig</li>
+                            </ul>
+                        </S.ShowTechs>
                     </div>
-                </Techs>
-                <Division />
-                <About data-aos="fade-up" id="About">
+                </S.Techs>
+                <S.Division />
+                <S.About data-aos="fade-up" id="About">
                     <h2>About Me</h2>
                     <p>
                         I&#39;m Wesley Westelley, a full-stack developer focused
-                        on the best technologies in the market, I&#39;m focused
-                        on acquiring knowledge to become a great full stack
-                        developer.
+                        on the best technologies around JavaScript/TypeScript, I
+                        develop complete web applications, from the backend to
+                        the frontend.
                     </p>
                     <div>
                         <div>
@@ -106,10 +129,10 @@ export default function Home() {
                             <p>Started my journey</p>
                         </div>
                     </div>
-                    <Division />
+                    <S.Division />
                     <p>Email: wesleywestelley@gmail.com</p>
-                </About>
-            </Main>
+                </S.About>
+            </S.Main>
         </>
     );
 }
