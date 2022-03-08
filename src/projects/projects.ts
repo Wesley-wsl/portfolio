@@ -3,6 +3,7 @@ import countries from '../assets/countries-app.png';
 import daynotes from '../assets/daynotes.png';
 import invoiceApp from '../assets/invoiceApp.png';
 import letmeask from '../assets/letmeask.png';
+import mySpotify from '../assets/mySpotify.png';
 import nikeShoes from '../assets/nike-shoes.png';
 import photosnap from '../assets/photosnap.png';
 import spaceTourism from '../assets/space-tourism.png';
@@ -18,12 +19,12 @@ export const projects = [
         source: 'https://github.com/Wesley-wsl/NikeShoes-FullStack',
     },
     {
-        name: 'CineTrending',
+        name: 'MySpotify',
         description:
-            'CineTrending is application about movies/tv series that show movie/tv series trending and your informations.',
-        img: cinetrending,
-        live: 'https://cinetrending.netlify.app',
-        source: 'https://github.com/Wesley-wsl/CineTrending',
+            'An application that make using Spotify Web Api to fetch data and show all data necessary for this application.',
+        img: mySpotify,
+        live: 'https://my-spotify-dlbx98mln-wesley-wsl.vercel.app',
+        source: 'https://github.com/Wesley-wsl/MySpotify',
     },
     {
         name: 'Photosnap',
@@ -32,6 +33,22 @@ export const projects = [
         img: photosnap,
         live: 'https://photosnap-wsl.netlify.app',
         source: 'https://github.com/Wesley-wsl/photosnap',
+    },
+    {
+        name: 'Marvel-Heroes',
+        description:
+            'The idea is to create an application with React Native that is able to list Marvel characters with their information, skill points and movies.',
+        img: 'https://i.imgur.com/IroCUou.png',
+        live: 'https://expo.dev/@jorkis/Marvel-Heroes',
+        source: 'https://github.com/Wesley-wsl/Marvel-Heroes',
+    },
+    {
+        name: 'CineTrending',
+        description:
+            'CineTrending is application about movies/tv series that show movie/tv series trending and your informations.',
+        img: cinetrending,
+        live: 'https://cinetrending.netlify.app',
+        source: 'https://github.com/Wesley-wsl/CineTrending',
     },
     {
         name: 'WeatherApp',

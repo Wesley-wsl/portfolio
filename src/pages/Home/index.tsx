@@ -77,14 +77,15 @@ export default function Home() {
                             <h3>Front-End</h3>
                             <ul>
                                 <li>Css</li>
+                                <li>SWR</li>
                                 <li>Html</li>
                                 <li>Scss</li>
                                 <li>Axios</li>
                                 <li>Next.JS</li>
+                                <li>GraphQL</li>
                                 <li>React.JS</li>
                                 <li>JavaScript</li>
                                 <li>TypeScript</li>
-                                <li>Apollo Client</li>
                                 <li>Styled-Components</li>
                             </ul>
                         </S.ShowTechs>
@@ -99,7 +100,6 @@ export default function Home() {
                                 <li>Express.JS</li>
                                 <li>JavaScript</li>
                                 <li>TypeScript</li>
-                                <li>Apollo Server</li>
                             </ul>
                         </S.ShowTechs>
                         <S.ShowTechs>
