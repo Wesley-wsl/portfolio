@@ -71,7 +71,10 @@ export default function Header() {
                     </a>
                 </p>
                 <p>
-                    <a href="#" aria-label="Go to my linkedin profile">
+                    <a
+                        href="https://www.linkedin.com/in/wesley-westellley-116852226/"
+                        aria-label="Go to my linkedin profile"
+                    >
                         <AiFillLinkedin aria-label="Linkedin icon" />
                     </a>
                 </p>
