@@ -23,7 +23,7 @@ export const projects = [
         description:
             'An application that make using Spotify Web Api to fetch data and show all data necessary for this application.',
         img: mySpotify,
-        live: 'https://my-spotify-dlbx98mln-wesley-wsl.vercel.app',
+        live: 'https://my-spotify-one.vercel.app',
         source: 'https://github.com/Wesley-wsl/MySpotify',
     },
     {
